@@ -1,0 +1,24 @@
+{
+  "name": "kafka-spike",
+  "version": "1.0.0",
+  "description": "Kafka SPIKE",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkylerRogers/kafka-spike.git"
+  },
+  "author": "Skyler Rogers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkylerRogers/kafka-spike/issues"
+  },
+  "homepage": "https://github.com/SkylerRogers/kafka-spike#readme",
+  "dependencies": {
+    "kafka-node": "^1.0.7"
+  },
+  "scripts": {
+    "kafka:produce": "node produce.js",
+    "kafka:consume": "node consume.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
