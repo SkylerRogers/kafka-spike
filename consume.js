@@ -8,7 +8,7 @@ const partition  = args.p || 0;
 const attributes = args.a || 0;
 
 // Connection
-const client   = new kafka.Client('localhost:2181');
+const client   = new kafka.KafkaClient({ kafkaHost: '127.0.0.1:29092' });
 const topics   = [{ topic: topic, partition: partition }];
 const options  = { autoCommit: true, fetchMaxWaitMs: 1000, fetchMaxBytes: 1024 * 1024 };
 const consumer = new kafka.Consumer(client, topics, options);
