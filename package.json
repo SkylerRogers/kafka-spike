@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/SkylerRogers/kafka-spike#readme",
   "dependencies": {
-    "kafka-node": "^1.0.7"
+    "kafka-node": "^5.0.0",
+    "minimist": "^1.2.5"
   },
   "scripts": {
     "kafka:produce": "node produce.js",
